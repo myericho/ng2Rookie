@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   private _title = 'app works!';
+  keyword :string = 'test';
+
+
   get title() {
 
     return this._title + "!";
