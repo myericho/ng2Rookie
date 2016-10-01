@@ -14,6 +14,7 @@ export class AppComponent {
     let idx = this.data.indexOf(item);
     this.data.splice(idx, 1);
   }
+
   doSearch(keyword: string) {
     this.keyword = keyword;
   }
