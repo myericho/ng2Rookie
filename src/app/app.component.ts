@@ -14,12 +14,12 @@ export class AppComponent {
      this.keyword = keyword;
   }
 
-  get title() {
+  // get title() {
 
-    return this._title + "!";
-  }
-  set title(value) {
-    this._title = value;
-  }
+  //   return this._title + "!";
+  // }
+  // set title(value) {
+  //   this._title = value;
+  // }
 
 }
