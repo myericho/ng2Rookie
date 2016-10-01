@@ -12,6 +12,7 @@
         <!-- Article START-->
         <app-article *ngFor="let item of data"
         [item] = "item"
+        (delete) = "doDeleteArticle(item)"
         ></app-article>
         <!-- Article END-->
 
