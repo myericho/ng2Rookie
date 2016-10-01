@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   private _title = 'app works!';
   get title() {
 
@@ -16,7 +17,3 @@ export class AppComponent {
   }
 
 }
-
-var a = new AppComponent();
-a.title = '111';
-var b = a.title;
