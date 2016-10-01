@@ -29,7 +29,8 @@
 
       <div class="pull-left">
         <h1><a [href]="titleUrl">{{title}}</a></h1>
-        <h3 [innerHTML]="subtitle" (click)="changeTitle($event)" [ngStyle]="{'font-size': num+'px'}" [ngClass]="{'red': num%2 ==0 }"></h3>{{num}}
+        <h3 [innerHTML]="subtitle" (click)="changeTitle($event)" [ngStyle]="{'font-size': num+'px'}" [ngClass]="{'red': num%2 ==0 }"></h3>
+        {{num| currency:'USD':true:'1.2-2'}}
       </div>
 
       <div *ngIf="num %2 ==0" id="social-icons" class="pull-right social-icon">
