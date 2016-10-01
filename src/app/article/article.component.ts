@@ -1,4 +1,5 @@
 import { Component, OnInit, OnChanges, Input, Output, EventEmitter } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-article',
@@ -10,7 +11,8 @@ export class ArticleComponent implements OnInit, OnChanges {
   @Input() item: any;
   @Output() delete = new EventEmitter<any>();
 
-  constructor() { }
+  constructor(private dataservc:DataService) {
+  }
 
   ngOnInit() {
   }
@@ -19,7 +21,4 @@ export class ArticleComponent implements OnInit, OnChanges {
 
   }
 
-  doDelete(item) {
-    this.delete.emit(item);
-  }
 }

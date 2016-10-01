@@ -11,7 +11,7 @@
   </header>
   <section class="post-body text" [innerHTML]="item.summary">
   </section>
-    <button (click)="doDelete(item)" >刪除</button>
+    <button (click)="dataservc.doDeleteArticle(item)" >刪除</button>
     <pre>
     {{item|json}}
     </pre>

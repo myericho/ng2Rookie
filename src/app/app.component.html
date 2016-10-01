@@ -10,9 +10,8 @@
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
 
         <!-- Article START-->
-        <app-article *ngFor="let item of data"
+        <app-article *ngFor="let item of dataservc.data"
         [item] = "item"
-        (delete) = "doDeleteArticle(item)"
         ></app-article>
         <!-- Article END-->
 
